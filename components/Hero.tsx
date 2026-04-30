@@ -86,17 +86,6 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        {...fadeUp(1.2)}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <div className="scroll-line w-px h-12 bg-gradient-to-b from-white/50 to-transparent" />
-        <span className="text-[0.65rem] tracking-[0.2em] uppercase text-white/45">
-          Scroll
-        </span>
-      </motion.div>
     </section>
   )
 }
