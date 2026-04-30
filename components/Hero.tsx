@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 30 },
@@ -23,7 +24,28 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+          className="relative mb-10"
+        >
+          <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border border-white/20">
+            <Image
+              src="/samyog.png"
+              alt="Samyog Sanjel"
+              fill
+              className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
+              sizes="160px"
+              priority
+            />
+          </div>
+          <div className="absolute inset-0 rounded-full border border-white/10 scale-110 animate-pulse" />
+        </motion.div>
+
         <motion.p
           {...fadeUp(0.3)}
           className="section-label justify-center text-[0.7rem] tracking-[0.25em] uppercase text-white/45 mb-8"
