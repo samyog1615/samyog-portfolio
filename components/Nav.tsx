@@ -27,12 +27,9 @@ export default function Nav() {
           : 'border-b border-transparent'
       }`}
     >
-      <Link
-        href="#"
-        className="font-syne font-extrabold text-lg tracking-wide text-white"
-      >
-        SS
-      </Link>
+      <Link href="#">
+  <img src="/ss-logo.svg" alt="SS" className="w-8 h-8" />
+</Link>
 
       <ul className="hidden md:flex gap-10 list-none">
         {links.map(({ href, label }) => (

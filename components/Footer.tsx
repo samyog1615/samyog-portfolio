@@ -4,7 +4,6 @@ export default function Footer() {
       <p className="text-[0.7rem] text-white/45 tracking-[0.05em]">
         &copy; {new Date().getFullYear()} Samyog Sanjel. All rights reserved.
       </p>
-      <p className="font-syne font-extrabold text-[0.9rem] text-white/20">SS</p>
-    </footer>
+    <img src="/ss-logo.svg" alt="SS" className="w-6 h-6 opacity-20" />    </footer>
   )
 }
