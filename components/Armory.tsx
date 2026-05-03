@@ -58,7 +58,7 @@ export default function Arsenal() {
             className="font-syne font-extrabold leading-[1.1]"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}
           >
-            The Arsenal
+            The Armory
           </h2>
         </motion.div>
 
