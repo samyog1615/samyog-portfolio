@@ -34,12 +34,12 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 }
 
-export default function Arsenal() {
+export default function Armory() {
   const { ref, inView } = useInView()
 
   return (
     <section
-      id="arsenal"
+      id="armory"
       className="py-32 border-t border-white/10 relative z-10"
     >
       <div className="max-w-[1200px] mx-auto px-16">

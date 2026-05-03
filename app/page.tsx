@@ -2,7 +2,7 @@ import Cursor from '@/components/Cursor'
 import Spotlight from '@/components/Spotlight'
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
-import Arsenal from '@/components/Arsenal'
+import Armory from '@/components/Armory'
 import Projects from '@/components/Projects'
 import Services from '@/components/Services'
 import Contact from '@/components/Contact'
@@ -16,7 +16,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <Arsenal />
+        <Armory />
         <Projects />
         <Services />
         <Contact />
